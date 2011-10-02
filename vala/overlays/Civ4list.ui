@@ -1,0 +1,1351 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkHBox" id="button_list">
+        <child>
+          <object class="OverlayHideWindowEventBox" id="eventbox0">
+            <property name="visible">True</property>
+            <property name="box_name">HideWindow</property>
+            <property name="winMain">overlay</property>
+            <child>
+              <!--<object class="GtkImage" id="image0">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/No.png</property>
+              </object>-->
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayHideWindowEventBox" id="eventbox1">
+            <property name="visible">True</property>
+            <property name="box_name">ArrowLeft</property>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox2">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Stadt</property>
+            <property name="shortcut">b,&lt;Return&gt; </property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image2">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Stadt.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox3">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Fischerboote</property>
+            <property name="shortcut">f</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image3">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Fischerboot.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox4">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Walfangschiff</property>
+            <property name="shortcut">&lt;Shift&gt;+w</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image4">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Walfangschiff.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox5">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Bohrinsel</property>
+            <property name="shortcut">o</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image5">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Bohrinsel.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox6">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Schienenweg</property>
+            <property name="shortcut">r</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image6">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Schienenweg.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox7">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Strasse</property>
+            <property name="shortcut">r</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image7">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Stra&#xDF;e.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox8">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Huette</property>
+            <property name="shortcut">t</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image8">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Geh&#xF6;ft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox9">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Feld</property>
+            <property name="shortcut">i</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image9">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Getreidefeld.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox10">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Bohrturm</property>
+            <property name="shortcut">&lt;Shift&gt;+w</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image10">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Bohrturm.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox11">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_StrasseNach</property>
+            <property name="shortcut">&lt;Alt&gt;+r</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image11">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Stra&#xDF;eNach.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox12">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Mine</property>
+            <property name="shortcut">m</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image12">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Mine.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox13">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Lager</property>
+            <property name="shortcut">h</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image13">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Jagdlager.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox14">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Naturschutzgebiet</property>
+            <property name="shortcut">&lt;Shift&gt;+f</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image14">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Landschaftsschutzgebiet.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox15">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Plantage</property>
+            <property name="shortcut">&lt;Shift&gt;+p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image15">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Plantage.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox16">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Auto</property>
+            <property name="shortcut">a</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image16">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Auto.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox17">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Saegewerk</property>
+            <property name="shortcut">l</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image17">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_S&#xE4;gewerk.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox18">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Steinbruch</property>
+            <property name="shortcut">q</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image18">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Steinbruch.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox19">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Festung</property>
+            <property name="shortcut">&lt;Ctrl&gt;+f</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image19">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Festung.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox20">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Weingut</property>
+            <property name="shortcut">&lt;Shift&gt;+w</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image20">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Weingut.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox21">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Shift_W</property>
+            <property name="shortcut">&lt;Shift&gt;+w</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image21">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Shift_W.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox22">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Roden</property>
+            <property name="shortcut">&lt;Alt&gt;+c</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image22">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Roden.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox23">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_GoTo</property>
+            <property name="shortcut">g</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image23">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_GoTo.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayConfirmedShortcut" id="eventbox24">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Kill</property>
+            <property name="shortcut">&lt;Delete&gt;,&lt;Enter&gt;</property>
+            <child>
+              <object class="GtkImage" id="image24">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Kill.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox25">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Skip</property>
+            <property name="shortcut">&lt;Space&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image25">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Skip.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+			<child>
+          <object class="OverlayShortcutEventBox" id="eventbox26">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Sleep</property>
+            <property name="shortcut">f</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image26">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Sleep.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox27">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Erkunden</property>
+            <property name="shortcut">e</property>
+            <property name="hide_after_action">true</property>
+            <child>
+        			<object class="GtkImage" id="image27">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Erkunden.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox28">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Center</property>
+            <property name="shortcut">c</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image28">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Center.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox29">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_ZoomIn</property>
+            <property name="shortcut">&lt;PageUp&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image29">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUp.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox30">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_ZoomOut</property>
+            <property name="shortcut">&lt;PageDown&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image30">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDown.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox31">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Befestigen</property>
+            <property name="shortcut">f</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image31">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Befestigen.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox32">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Abbrechen</property>
+            <property name="shortcut">&lt;BackSpace&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image32">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Abbrechen.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShowWindowEventBox" id="eventbox33">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4BTgrid</property>
+            <property name="uiname">Civ4BTgrid.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image33">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_BT.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShowWindowEventBox" id="eventbox34">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4Unitgrid</property>
+            <property name="uiname">Civ4Unitgrid.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image34">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox35">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Wache</property>
+            <property name="shortcut">s</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image35">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Wache.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox36">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_UpLeft</property>
+            <property name="shortcut">&lt;XK_KP_7&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image36">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUpLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox37">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Up</property>
+            <property name="shortcut">&lt;XK_KP_8&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image37">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUp.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox38">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_UpRight</property>
+            <property name="shortcut">&lt;XK_KP_9&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image38">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUpRight.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox39">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Left</property>
+            <property name="shortcut">&lt;XK_KP_4&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image39">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox40">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Right</property>
+            <property name="shortcut">&lt;XK_KP_6&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image40">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowRight.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox41">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_DownLeft</property>
+            <property name="shortcut">&lt;XK_KP_1&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image41">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDownLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox42">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Down</property>
+            <property name="shortcut">&lt;XK_KP_2&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image42">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDown.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox43">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_DownRight</property>
+            <property name="shortcut">&lt;XK_KP_3&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image43">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDownRight.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox44">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_MouseLeft</property>
+            <property name="shortcut">&lt;MouseLeft&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image44">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/MouseLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox45">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_MouseRight</property>
+            <property name="shortcut">&lt;MouseRight&gt; </property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image45">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/MouseRight.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+						<child>
+							<object class="OverlaySignalEventBox" id="eventbox46">
+								<property name="visible">True</property>
+								<property name="box_name">yes</property>
+								<child>
+									<object class="GtkImage" id="image46">
+									 <property name="visible">True</property>
+									 <property name="pixbuf">../icons/Yes.png</property>
+								 </object>
+								</child>
+							</object>
+						</child>
+						<child>
+							<object class="OverlaySignalEventBox" id="eventbox47">
+								<property name="visible">True</property>
+								<property name="box_name">no</property>
+								<child>
+									<object class="GtkImage" id="image47">
+										<property name="visible">True</property>
+										<property name="pixbuf">../icons/No.png</property>
+									</object>
+								</child>
+							</object>
+						</child>
+						<child>
+          <object class="OverlayShortcutEventBox" id="eventbox48">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Skip2</property>
+            <property name="shortcut">&lt;Space&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image48">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Skip.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox49">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Gehege</property>
+            <property name="shortcut">&lt;Shift&gt;+p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image49">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4FFH_Gehege.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox50">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_PreviousCity</property>
+            <property name="shortcut">&lt;Left&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image50">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Previous.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox51">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_NextCity</property>
+            <property name="shortcut">&lt;Right&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image51">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Next.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox52">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Capital</property>
+            <property name="shortcut">&lt;F10&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image52">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Capital.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox53">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_NearestCity</property>
+            <property name="shortcut">&lt;Insert&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image53">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_NearestCity.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox54">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F1</property>
+            <property name="shortcut">&lt;F1&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image54">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F1.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox55">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F2</property>
+            <property name="shortcut">&lt;F2&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image55">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F2.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox56">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F3</property>
+            <property name="shortcut">&lt;F3&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image56">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F3.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox57">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F4</property>
+            <property name="shortcut">&lt;F4&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image57">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F4.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox58">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F5</property>
+            <property name="shortcut">&lt;F5&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image58">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F5.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox59">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F6</property>
+            <property name="shortcut">&lt;F6&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image59">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F6.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox60">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F7</property>
+            <property name="shortcut">&lt;F7&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image60">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F7.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox61">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F7b</property>
+            <property name="shortcut">&lt;Shift&gt;+&lt;F7&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image61">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F7b.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox62">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F8</property>
+            <property name="shortcut">&lt;F8&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image62">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F8.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox63">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F9</property>
+            <property name="shortcut">&lt;F9&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image63">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F9.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox64">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F12</property>
+            <property name="shortcut">&lt;F12&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image64">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F12.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox65">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_F11</property>
+            <property name="shortcut">&lt;F11&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image65">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_F11.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox66">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Tab</property>
+            <property name="shortcut">&lt;Ctrl&gt;+&lt;Tab&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image66">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Tab.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox67">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Espionage</property>
+            <property name="shortcut">&lt;Ctrl&gt;+e</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image67">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Espio.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox68">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Esc</property>
+            <property name="shortcut">&lt;Esc&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image68">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Auto.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox69">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Ping</property>
+            <property name="shortcut">p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image69">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Ping.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShowWindowEventBox" id="eventbox70">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4Menu</property>
+            <property name="uiname">Civ4Menu.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image70">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Menu.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShowWindowEventBox" id="eventbox71">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4Menu2</property>
+            <property name="uiname">Civ4Menu2.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image71">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Menu2.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox73">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Save</property>
+            <property name="shortcut">&lt;Ctrl&gt;+s</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image73">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Save.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox74">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Load</property>
+            <property name="shortcut">&lt;Ctrl&gt;+l</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image74">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Load.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox75">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Contact</property>
+            <property name="shortcut">&lt;Shift&gt;+d</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image75">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Contact.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox76">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Grid</property>
+            <property name="shortcut">&lt;Ctrl&gt;+t</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image76">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Grid.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox77">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_NPG</property>
+            <property name="shortcut">&lt;Ctrl&gt;+y</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image77">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_NPG.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox78">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Ress</property>
+            <property name="shortcut">&lt;Ctrl&gt;+r</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image78">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Ress.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox79">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Music</property>
+            <property name="shortcut">&lt;Alt&gt;+m</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image79">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Music.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox80">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_MinimalInterface</property>
+            <property name="shortcut">&lt;Ctrl&gt;+i</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image80">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Interface.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox81">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_NoInterface</property>
+            <property name="shortcut">&lt;Alt&gt;+i</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image81">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_NoInterface.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox82">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_EndTurn</property>
+            <property name="shortcut">&lt;Shift&gt;+&lt;Return&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image82">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_EndTurn.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox83">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_CircleNext</property>
+            <property name="shortcut">&lt;Period&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image83">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_CircleNext.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox84">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_CirclePrev</property>
+            <property name="shortcut">&lt;Comma&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image84">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_CirclePrev.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox85">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_SelectAll</property>
+            <property name="shortcut">&lt;Alt&gt;+g</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image85">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_SelectAll.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox86">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_SelectSame</property>
+            <property name="shortcut">&lt;Ctrl&gt;+g</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image86">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_SelectSame.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShowWindowEventBox" id="eventbox87">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4Unitgrid2</property>
+            <property name="uiname">Civ4Unitgrid2.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image87">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Krieger.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox88">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Unskip</property>
+            <property name="shortcut">\</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image88">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Unskip.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox89">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Bombardieren</property>
+            <property name="shortcut">b</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image89">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Bombardieren.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox90">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Pluendern</property>
+            <property name="shortcut">&lt;Shift&gt;+p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image90">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Pluendern.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox91">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Blockade</property>
+            <property name="shortcut">&lt;Shift&gt;+p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image91">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Blockade.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox92">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Patrouille</property>
+            <property name="shortcut">p</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image92">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Patrouille.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+ 				<child>
+          <object class="OverlayShortcutAndShowWindow" id="eventbox93">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Capital2</property>
+            <property name="shortcut">&lt;F10&gt;</property>
+            <property name="hide_after_action">false</property>
+            <property name="uiname">Civ4Citymenu.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image93">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Capital.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+ 				<child>
+          <object class="OverlayShortcutAndShowWindow" id="eventbox94">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_NearestCity2</property>
+            <property name="shortcut">&lt;Insert&gt;</property>
+            <property name="hide_after_action">false</property>
+            <property name="uiname">Civ4Citymenu.ui</property>
+            <property name="mode">1</property>
+            <child>
+              <object class="GtkImage" id="image94">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_NearestCity.png</property>
+              </object>
+            </child>
+         </object>
+        </child>
+				<child>
+          <object class="OverlaySendOscMessageBox" id="eventbox95">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_MoveAndScale</property>
+            <property name="hide_after_action">true</property>
+            <property name="messagepath">/overlay/manager/generalMessage</property>
+            <property name="messagename">MoveAndScale</property>
+            <property name="messagevalue">1</property>
+            <child>
+							<!--
+              <object class="GtkImage" id="image95">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Auto.png</property>
+              </object>
+							-->
+            </child>
+         </object>
+        </child>
+        <child>
+          <object class="OverlayShortcutEventBox" id="eventbox96">
+            <property name="visible">True</property>
+            <property name="box_name">Civ4_Heal</property>
+            <property name="shortcut">h</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image96">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Civ4_Heal.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+     </object>
+</interface>

@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="OverlayOverlayWindow" id="overlay">
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">Sample Application</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">1024</property>
+    <property name="default_height">768</property>
+    <property name="urgency_hint">True</property>
+    <property name="decorated">False</property>
+    <property name="opacity">0.5</property>
+    <property name="maximizeOverlay">true</property>
+    <property name="react_on_mouse">true</property>
+    <property name="prefered_position">9</property>
+    <child>
+      <object class="GtkTable" id="table1">
+        <property name="visible">True</property>
+        <property name="n_rows">4</property>
+        <property name="n_columns">5</property>
+        <property name="homogeneous">True</property>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox1">
+						<property name="box_name">Civ4Unitgrid</property>
+					</object>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox2">
+						<property name="box_name">Civ4BTgrid</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox3">
+						<property name="box_name">Civ4_Heal</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox4">
+						<property name="box_name">Civ4_Patrouille</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox5">
+						<property name="box_name">Civ4_Kill</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox6">
+						<property name="box_name">Civ4_Abbrechen</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox7">
+						<property name="box_name">Civ4_CirclePrev</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox8">
+						<property name="box_name">Civ4_CircleNext</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox9">
+						<property name="box_name">Civ4_GoTo</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox10">
+						<property name="box_name">Civ4_Erkunden</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox11">
+						<property name="box_name">Civ4_Center</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox12">
+						<property name="box_name">Civ4_Befestigen</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox13">
+						<property name="box_name">Civ4_Sleep</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox14">
+						<property name="box_name">Civ4_Wache</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox15">
+						<property name="box_name">Civ4_Unskip</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox16">
+						<property name="box_name">Civ4_Stadt</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox17">
+						<property name="box_name">Civ4_Bombardieren</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox18">
+						<property name="box_name">Civ4_Blockade</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox19">
+						<property name="box_name">Civ4_Pluendern</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox20">
+						<property name="box_name">Civ4_Skip</property>
+					</object>
+          <packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
