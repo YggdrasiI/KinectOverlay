@@ -115,13 +115,13 @@
         <child>
           <object class="OverlayShortcutEventBox" id="eventbox8">
             <property name="visible">True</property>
-            <property name="box_name">Civ4_Huette</property>
+            <property name="box_name">Civ4_Cottage</property>
             <property name="shortcut">t</property>
             <property name="hide_after_action">true</property>
             <child>
               <object class="GtkImage" id="image8">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/Civ4FFH_Geh&#xF6;ft.png</property>
+                <property name="pixbuf">../icons/Civ4_Cottage.png</property>
               </object>
             </child>
           </object>
@@ -177,7 +177,7 @@
             <child>
               <object class="GtkImage" id="image12">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/Civ4FFH_Mine.png</property>
+                <property name="pixbuf">../icons/Civ4_Mine.png</property>
               </object>
             </child>
           </object>
@@ -241,13 +241,13 @@
         <child>
           <object class="OverlayShortcutEventBox" id="eventbox17">
             <property name="visible">True</property>
-            <property name="box_name">Civ4_Saegewerk</property>
+            <property name="box_name">Civ4_Lumbermill</property>
             <property name="shortcut">l</property>
             <property name="hide_after_action">true</property>
             <child>
               <object class="GtkImage" id="image17">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/Civ4FFH_S&#xE4;gewerk.png</property>
+                <property name="pixbuf">../icons/Civ4_Lumbermill.png</property>
               </object>
             </child>
           </object>

@@ -97,7 +97,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox8">
-						<property name="box_name">Civ4_Huette</property>
+						<property name="box_name">Civ4_Cottage</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -210,7 +210,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox17">
-						<property name="box_name">Civ4_Saegewerk</property>
+						<property name="box_name">Civ4_Lumbermill</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
