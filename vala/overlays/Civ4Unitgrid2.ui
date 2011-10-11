@@ -49,7 +49,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox4">
-						<property name="box_name">Civ4_Patrouille</property>
+						<property name="box_name">Civ4_Patrol</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
