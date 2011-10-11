@@ -71,7 +71,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox6">
-						<property name="box_name">Civ4_Abbrechen</property>
+						<property name="box_name">Civ4_Abort</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -121,7 +121,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox10">
-						<property name="box_name">Civ4_Erkunden</property>
+						<property name="box_name">Civ4_Explore</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -145,7 +145,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox12">
-						<property name="box_name">Civ4_Befestigen</property>
+						<property name="box_name">Civ4_Fortify</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -171,7 +171,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox14">
-						<property name="box_name">Civ4_Wache</property>
+						<property name="box_name">Civ4_Sentry</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -197,7 +197,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox16">
-						<property name="box_name">Civ4_Stadt</property>
+						<property name="box_name">Civ4_City</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -234,7 +234,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox19">
-						<property name="box_name">Civ4_Pluendern</property>
+						<property name="box_name">Civ4_Pillage</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>

@@ -15,4 +15,5 @@ overlay:
 
 $(BINDIR):
 	mkdir -p $(BINDIR)
+	ln -s ../overlays bin/overlays
 

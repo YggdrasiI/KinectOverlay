@@ -10,3 +10,4 @@ Requires:
 - Nite-1.3.0.18
 - vala-0.14
 - Headers: [...
+- uinput

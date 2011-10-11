@@ -39,7 +39,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox3">
-						<property name="box_name">Civ4_Fischerboote</property>
+						<property name="box_name">Civ4_FishingBoat</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -73,7 +73,7 @@
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox6">
 					<!--	<property name="box_name">Civ4_Schienenweg</property>-->
-						<property name="box_name">Civ4_Gehege</property>
+						<property name="box_name">Civ4_Pasture</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -110,7 +110,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox9">
-						<property name="box_name">Civ4_Feld</property>
+						<property name="box_name">Civ4_Farm</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -123,7 +123,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox10">
-						<property name="box_name">Civ4_Roden</property>
+						<property name="box_name">Civ4_Chop</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -136,7 +136,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox11">
-						<property name="box_name">Civ4_StrasseNach</property>
+						<property name="box_name">Civ4_RoadTo</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -147,7 +147,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox12">
-						<property name="box_name">Civ4_Strasse</property>
+						<property name="box_name">Civ4_Road</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -160,7 +160,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox13">
-						<property name="box_name">Civ4_Lager</property>
+						<property name="box_name">Civ4_Camp</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -186,7 +186,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox15">
-						<property name="box_name">Civ4_Plantage</property>
+						<property name="box_name">Civ4_Plantation</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -223,7 +223,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox18">
-						<property name="box_name">Civ4_Steinbruch</property>
+						<property name="box_name">Civ4_Quarry</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -236,7 +236,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox19">
-						<property name="box_name">Civ4_Festung</property>
+						<property name="box_name">Civ4_Fortress</property>
 					</object>
           <packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
