@@ -1,5 +1,4 @@
 
-
 This software provides the control of the Game Civilization 4
 with a Kinect sensor. 
 One part (based on OpenNi) detect both hands and emulate the mouse.
@@ -9,5 +8,5 @@ The second part shows an overlay for several actions.
 Requires: 
 - Nite-1.3.0.18
 - vala-0.14
-- Headers: [...
 - uinput
+- Headers: [..., todo]
