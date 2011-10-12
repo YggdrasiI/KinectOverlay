@@ -239,11 +239,12 @@ void XN_CALLBACK_TYPE PrimaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void* c
 												printf("'Activate overlay' Push\n");
 
 												//Select overlayname. 
-												if( strcmp( g_active_overlay, "") == 0 ||
-																				strcmp( g_active_overlay, "Civ4Numpad.ui") == 0 ||
-																				strcmp( g_active_overlay, "Civ4Citymenu.ui") == 0 ||
-																				//strncmp( g_active_overlay, "Civ4Menu", 8 ) == 0 ){
-																				strncmp( g_active_overlay, "Civ4Menu2", 9 ) == 0 ){
+												if( //strcmp( g_active_overlay, "") == 0 ||
+														strcmp( g_active_overlay, "Civ4Numpad.ui") == 0 ||
+														strcmp( g_active_overlay, "Civ4Citymenu.ui") == 0 ||
+														//strncmp( g_active_overlay, "Civ4Menu", 8 ) == 0 ){
+													  strncmp( g_active_overlay, "Civ4Menu2", 9 ) == 0
+												 ){
 																char uiname[] = "Civ4Unitgrid.ui";
 																civ4_change_overlay(uiname,1);
 												}else{
