@@ -95,6 +95,7 @@ XnUInt64 g_nPrimaryPushTimestamp = 0;
 XnUInt64 g_nSecondaryPushTimestamp = 0;
 bool g_bprimaryPushActive = false;
 bool g_bsecondaryPushActive = false;
+bool g_bRightMouseButtonPressed = false;
 
 
 static XnVPushDetector pd1;//now static/global
@@ -351,7 +352,6 @@ void XN_CALLBACK_TYPE SecondaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void*
 												}
 								}else if( !scale_active ){ // push only, if not in scale mode
 												printf("Secondary Push\n");
-												{
 																/*   int root_x, root_y;
 																		 int win_x, win_y;
 																		 int ret;
@@ -369,14 +369,35 @@ void XN_CALLBACK_TYPE SecondaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void*
 																		 }
 																 */
 																if( g_pPointDetector->m_secondaryPosition.Y < 400){
-																				send_mouse_down(BTN_LEFT);
-																				send_mouse_up(BTN_LEFT);
-																}else{
+																				
+																				if( g_bRightMouseButtonPressed ){
+																					g_bRightMouseButtonPressed = false;
+																					g_pPointDetector->m_bAllowOnlyEightDirections = false;
+																					//m_psmoothPrimaryPositionLongtime->m_bactive = true;
+																					send_mouse_up(BTN_RIGHT);
+																				}else{
+																					send_mouse_down(BTN_LEFT);
+																					send_mouse_up(BTN_LEFT);
+																				}
+																}/*else{
 																				send_mouse_down(BTN_RIGHT);
 																				send_mouse_up(BTN_RIGHT);
-																}
-												}
-
+																}*/
+																else{
+																
+																				if( g_bRightMouseButtonPressed ){
+																								//release right mouse button
+																								g_bRightMouseButtonPressed = false;
+																								g_pPointDetector->m_bAllowOnlyEightDirections = false;
+																								//m_psmoothPrimaryPositionLongtime->m_bactive = true;
+																								send_mouse_up(BTN_RIGHT);
+																				}else{
+																								g_bRightMouseButtonPressed = true;
+																								g_pPointDetector->m_bAllowOnlyEightDirections = true;
+																								//m_psmoothPrimaryPositionLongtime->m_bactive = false;
+																								send_mouse_down(BTN_RIGHT);
+																				}
+															 }
 								}else{
 									//Disable scale mode
 									//g_pPointDetector->setMode(1);

@@ -194,6 +194,7 @@ private:
 
 public: 
 				XnPoint3D* m_ppoint;
+				bool m_bactive;
 // Mouse Move Stuff
 //Weightfactors for MAXCOORDS=1000 and C=1/100
 //static const double WEIGHT1 = 0.00990099477839656399 - 0.00000047734400513625;
@@ -212,12 +213,14 @@ static const double WEIGHT2 = 1.0/10000.0;
 			m_scaleY = WEIGHT2*scaleY;
 			m_scaleZ = WEIGHT2*scaleZ;
 			m_prelude = 0;
+			m_bactive = true;
 	}
 	virtual ~SmoothingPoint3D_2(){
 		//delete m_ppoint;//wrong, m_ppoint not init in this class
 	}
 public:
 		void update( XnPoint3D input ){
+		if( ! m_bactive ) return;
 		/* //big rounding errors...
 				m_ppoint->X *= WEIGHT1;
 				m_ppoint->X += WEIGHT2*input.X*m_scaleX;
@@ -277,7 +280,7 @@ private:
 				int m_lastAbsoluteY;
 				int m_currentAbsoluteX;
 				int m_currentAbsoluteY;
-						int m_nmode; //  Point Update call [primary|seondary|both]Update CB
+			  int m_nmode; //  Point Update call [primary|seondary|both]Update CB
 
 public:
 		XnPoint3D m_primaryPosition;
@@ -298,6 +301,7 @@ public:
 		XnUInt64 m_lastActionTimestamp;
 		int m_pressed_keycode[PRESSED_KEYCODE_SIZE];
 		int m_pressed_keycode_index;
+		bool m_bAllowOnlyEightDirections;
 
 		XnPoint3D m_primaryPositionLongtime;
 		SmoothingPoint3D_2* m_psmoothPrimaryPositionLongtime;
@@ -331,6 +335,7 @@ public:
 		  m_lastAbsoluteY = 0;
 			m_currentAbsoluteX = 0;
 			m_currentAbsoluteY = 0;
+			m_bAllowOnlyEightDirections = false;
 			for(int i=0; i<PRESSED_KEYCODE_SIZE; i++){
 				m_pressed_keycode[i] = -1;
 			}
@@ -393,11 +398,32 @@ void MouseCB(){
 
 
 			//Move cursor
+			//check, if movement should reduced to eight directions, if right mousebutton pressed
+			if( m_bAllowOnlyEightDirections ){
+				double arc = atan2( m_currentAbsoluteY-m_lastAbsoluteY, m_currentAbsoluteX-m_lastAbsoluteX );
+				double d = move_factor* fmax( fabs(m_currentAbsoluteX-m_lastAbsoluteX), fabs(m_currentAbsoluteY-m_lastAbsoluteY) );
+				int intervall = floor( arc/M_PI*4 + 0.5);
+				switch( intervall ){
+					case 4: //same like -4
+					case -4: move_cursor( -d, 0 ); break;
+					case -3: move_cursor( -d, d ); break;
+					case -2: move_cursor( 0, d ); break;
+					case -1: move_cursor( d, d ); break;
+					case 0: move_cursor( d, 0 ); break;
+					case 1: move_cursor( d, -d ); break;
+					case 2: move_cursor( 0, -d ); break;
+					case 3: move_cursor( -d, -d ); break;
+					default: printf("Error in switch block\n");	
+				}
+
+			}else{
+
 			//printf("Move Cursor! %i, %i\n",m_currentAbsoluteX-m_lastAbsoluteX, m_lastAbsoluteY-m_currentAbsoluteY);
 			move_cursor(
 				move_factor *( m_currentAbsoluteX-m_lastAbsoluteX ),
 				move_factor *( m_lastAbsoluteY-m_currentAbsoluteY )
 			);
+			}
 
 			m_lastAbsoluteX = m_currentAbsoluteX;
 			m_lastAbsoluteY = m_currentAbsoluteY; 
