@@ -560,5 +560,83 @@ namespace Overlay {
 								}
 				}
 
+				public class RunCommandEventBox : OverlayEventBox, Initable, Buildable  {
+
+								public new void parser_finished (Builder builder){
+												//debug("BUILDER paser shortcut");
+												base.parser_finished(builder);
+												init();
+								}
+
+								public string command {get; set;}
+								//public uint[] keysym {get; set; }
+								//public int[]  modifiers {get; set; }
+
+								public RunCommandEventBox(){
+												base();
+								}
+
+								public RunCommandEventBox.copy(RunCommandEventBox orig){
+												base.copy(orig);
+												this.command = orig.command;
+												init();
+								}
+
+								public override OverlayEventBox copyBox(){
+												//debug("RunCommandEventBox.copyBox()");
+												return new RunCommandEventBox.copy(this);
+								}
+
+								public new void init(){
+												//base.init();
+								}
+
+
+								public override bool my_button_release_event (EventButton source){
+												//debug("Shortcutbutton activated.");
+
+												//omanager.hideOverlay();
+												this.send_command();
+												omanager.loclient.broadcastCellClicked();
+												return false;
+								}
+
+								public void send_command(){
+												stdout.printf("Run command: %s\n", this.command);
+												var cmd = this.command.split(" ");
+												this.execProgram( cmd );
+												Posix.sleep(1);
+
+												//hide overlay
+												if( hide_after_action ){
+																omanager.hideActiveOverlay();
+												}
+								}
+
+								// argv = {"programm", ["arg1"], [...] }
+								public static void execProgram(string[] argv)
+								{
+
+									Pid child_pid;
+									int input_fd;
+									int output_fd;
+									int error_fd;
+									try {
+										Process.spawn_async_with_pipes(
+												".",
+												argv, //argv
+												null,   // environment
+												SpawnFlags.SEARCH_PATH,
+												null,   // child_setup
+												out child_pid,
+												out input_fd,
+												out output_fd,
+												out error_fd);
+									}   
+									catch (Error e) {
+										stderr.printf ("Could not load UI: %s\n", e.message);
+									}   
+								}	
+				}
 
 }//End Namespace
