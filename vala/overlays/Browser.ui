@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="OverlayOverlayWindow" id="overlay">
+    <property name="title" translatable="yes">Sample Application</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">1024</property>
+    <property name="default_height">768</property>
+    <property name="urgency_hint">True</property>
+    <property name="decorated">False</property>
+    <property name="opacity">0.1</property>
+    <property name="maximizeOverlay">true</property>
+    <property name="react_on_mouse">false</property>
+    <property name="prefered_position">5</property>
+    <child>
+      <object class="GtkTable" id="buttontable">
+        <property name="visible">True</property>
+        <property name="n_rows">2</property>
+        <property name="n_columns">1</property>
+        <property name="homogeneous">True</property>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox1">
+						<property name="box_name">Browser_Up</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox2">
+						<property name="box_name">Browser_Down</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

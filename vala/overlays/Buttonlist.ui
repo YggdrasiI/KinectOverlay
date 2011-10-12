@@ -1347,5 +1347,33 @@
             </child>
           </object>
         </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox97">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Up</property>
+            <property name="shortcut">&lt;Shift&gt;+&lt;Space&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image97">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUp.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox98">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Down</property>
+            <property name="shortcut">&lt;Space&gt;</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image98">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDown.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
      </object>
 </interface>
