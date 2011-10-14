@@ -1,11 +1,11 @@
 /****************************************************************************
-*                                                                           *
-*   Some helper functions.                                                  *
-*                                                                           *
-*                                                                           *
-*   Author:     Olaf Schulz, 2011                                           *
-*                                                                           *
-****************************************************************************/
+ *                                                                           *
+ *   Some helper functions.                                                  *
+ *                                                                           *
+ *                                                                           *
+ *   Author:     Olaf Schulz, 2011                                           *
+ *                                                                           *
+ ****************************************************************************/
 
 //-----------------------------------------------------------------------------
 // Headers
@@ -25,13 +25,13 @@
 
 
 /*
-Da die Umwandlung des Codes von keysend in cpp 
-noch nicht klappte, wird keysend "extern" aufgerufen.
-*/
+	 Da die Umwandlung des Codes von keysend in cpp 
+	 noch nicht klappte, wird keysend "extern" aufgerufen.
+ */
 void send_keysym(int keysym, int modifier);
 
 /*
- Auslesen der Mausposition
-*/
+	 Auslesen der Mausposition
+ */
 static int _XlibErrorHandler(Display *display, XErrorEvent *event); 
 int getMousePosition(int *root_x, int *root_y, int *win_x, int *win_y); 
