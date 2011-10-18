@@ -553,7 +553,9 @@ void XN_CALLBACK_TYPE PrimaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void* c
 			//((MyBox2*)user_data)->m_pTrackPad->SetItemCount( (XnInt32) (argv[2]->i), (XnInt32) (argv[3]->i) );
 			g_pMySlider->SetItemCount( (XnInt32) (argv[3]->i), (XnInt32) (argv[2]->i) );
 
-			if( strcmp( g_active_overlay, "Civ4Citymenu.ui") == 0 ){  
+			if( strcmp( g_active_overlay, "Civ4Citymenu.ui") == 0 ||
+					( strcmp( g_active_overlay, "Browser.ui") == 0 )
+			){  
 				circle_active = TRUE;
 				mouse_move_active = TRUE;
 				g_pPointDetector->setMode(1);
