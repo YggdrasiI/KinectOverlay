@@ -1,4 +1,3 @@
-
 #include "signal_catch.h"
 #include <stdio.h>
 #include <unistd.h>

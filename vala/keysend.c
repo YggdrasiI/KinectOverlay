@@ -1,7 +1,7 @@
 /* keysend.c
  * Copyright (C) 2008 Alex Graveley
  * Copyright (C) 2010 Ulrik Sverdrup <ulrik.sverdrup@gmail.com>
- * Copyright (C) 2011 Olaf Schulz <schulz@math.hu-berlin.de> (modified bind.c)
+ * Copyright (C) 2011 Olaf Schulz  <schulz[AT]math[DOT]hu-berlin[DOT]de> (modified bind.c)
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the

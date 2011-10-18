@@ -1351,7 +1351,8 @@
           <object class="OverlayShortcutEventBox" id="eventbox97">
             <property name="visible">True</property>
             <property name="box_name">Browser_Up</property>
-            <property name="shortcut">&lt;Shift&gt;+&lt;Space&gt;</property>
+            <!--<property name="shortcut">&lt;Shift&gt;+&lt;Space&gt;</property>-->
+            <property name="shortcut">b</property>
             <property name="hide_after_action">false</property>
             <child>
               <object class="GtkImage" id="image97">
