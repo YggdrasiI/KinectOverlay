@@ -1375,5 +1375,34 @@
             </child>
           </object>
         </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox99">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Home</property>
+            <property name="shortcut">&lt;Alt&gt;+&lt;Home&gt;</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image99">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/gnome-home.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayRunCommandEventBox" id="eventbox100">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Start</property>
+            <property name="command">firefox</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image100">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/firefox.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
      </object>
 </interface>
