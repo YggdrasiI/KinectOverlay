@@ -3,16 +3,16 @@ using X;
 
 namespace Overlay {
 
-	X.Display* display;
 
-	public class Mouse{
+	public class Mouse {
+		X.Display* display;
 
 		public Mouse(){
 			// Open X display
-			Display *display = new Display(null);
+			display = new Display(null);
 			if (display == null)
 			{
-				stderr.fprintf ("Can't open display!\n");
+				stderr.printf ("Can't open display!\n");
 			}
 		}
 
@@ -20,14 +20,14 @@ namespace Overlay {
 			//	XCloseDisplay (display);//no, not needed in vala
 		}
 
-		void click(int button){
+		public void click(int button){
 			//call extern function
-			click( display, button);
+			mouse_click( display, button);
 		}
 
 	}
 
 }
 
-extern void click (X.Display *display, int button)
+extern void mouse_click (X.Display* display, int button);
 

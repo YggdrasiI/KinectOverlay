@@ -21,7 +21,7 @@
         <property name="n_columns">7</property>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox1">
-						<property name="box_name">Civ4_MouseLeft</property>
+						<property name="box_name">Click_Left</property>
           </object>
           <packing>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -31,7 +31,7 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox2">
-						<property name="box_name">Civ4_MouseRight</property>
+						<property name="box_name">Click_Right</property>
           </object>
           <packing>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>

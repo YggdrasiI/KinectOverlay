@@ -12,8 +12,8 @@ public delegate void MainCallback();
 static OverlayManager omanager;
 static KeybindingManager kmanager;
 public MainCallback callback_from_lo_server_thread = null;
- 
-static int main (string[] args) {     
+
+static int main (string[] args) {
     Gtk.init (ref args);
 
 		omanager = new OverlayManager();

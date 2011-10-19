@@ -1407,7 +1407,7 @@
 				<child>
           <object class="OverlayMouseEventBox" id="eventbox101">
             <property name="visible">True</property>
-            <property name="box_name">Click_left</property>
+            <property name="box_name">Click_Left</property>
             <property name="button">1</property>
             <property name="hide_after_action">true</property>
             <child>
@@ -1421,7 +1421,7 @@
 				<child>
           <object class="OverlayMouseEventBox" id="eventbox102">
             <property name="visible">True</property>
-            <property name="box_name">Click_middle</property>
+            <property name="box_name">Click_Middle</property>
             <property name="button">2</property>
             <property name="hide_after_action">true</property>
             <child>
@@ -1436,7 +1436,7 @@
 				<child>
           <object class="OverlayMouseEventBox" id="eventbox103">
             <property name="visible">True</property>
-            <property name="box_name">Click_right</property>
+            <property name="box_name">Click_Right</property>
             <property name="button">3</property>
             <property name="hide_after_action">true</property>
             <child>

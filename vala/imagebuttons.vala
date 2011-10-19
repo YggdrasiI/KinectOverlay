@@ -641,6 +641,8 @@ namespace Overlay {
 
 				public class MouseEventBox : OverlayEventBox, Initable, Buildable  {
 
+								private static Mouse mouse = null;
+
 								public new void parser_finished (Builder builder){
 												//debug("BUILDER paser shortcut");
 												base.parser_finished(builder);
@@ -666,6 +668,10 @@ namespace Overlay {
 
 								public new void init(){
 												//base.init();
+										if( mouse == null ){
+												debug("Init mouse class.");
+												mouse = new Mouse();
+										}
 								}
 
 
@@ -680,7 +686,7 @@ namespace Overlay {
 
 								public void send_click(){
 												stdout.printf("Mousebutton: %i\n", this.button);
-												//this.execProgram( cmd );
+												this.mouse.click( this.button);
 												Posix.sleep(1);
 
 												//hide overlay

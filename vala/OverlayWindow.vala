@@ -80,6 +80,10 @@ private void table_cb(Widget widget){
 public void scaleGridImages( Gtk.Table table){
 
 	this.get_size(out this.width, out this.height);
+
+	this.width =  int.min(this.width, this.screen.width());
+	this.height =  int.min(this.height, this.screen.height());
+
 	uint rows = table.n_rows;
 	uint columns = table.n_columns;
 	this.n_rows += table.n_rows;
