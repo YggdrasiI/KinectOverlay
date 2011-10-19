@@ -632,11 +632,63 @@ namespace Overlay {
 												out input_fd,
 												out output_fd,
 												out error_fd);
-									}   
+									}
 									catch (Error e) {
 										stderr.printf ("Could not load UI: %s\n", e.message);
-									}   
-								}	
+									}
+								}
+				}
+
+				public class MouseEventBox : OverlayEventBox, Initable, Buildable  {
+
+								public new void parser_finished (Builder builder){
+												//debug("BUILDER paser shortcut");
+												base.parser_finished(builder);
+												init();
+								}
+
+								public int button {get; set;}
+
+								public MouseEventBox(){
+												base();
+								}
+
+								public MouseEventBox.copy(MouseEventBox orig){
+												base.copy(orig);
+												this.button = orig.button;
+												init();
+								}
+
+								public override OverlayEventBox copyBox(){
+												//debug("MouseEventBox.copyBox()");
+												return new MouseEventBox.copy(this);
+								}
+
+								public new void init(){
+												//base.init();
+								}
+
+
+								public override bool my_button_release_event (EventButton source){
+												//debug("Shortcutbutton activated.");
+
+												//omanager.hideOverlay();
+												this.send_click();
+												omanager.loclient.broadcastCellClicked();
+												return false;
+								}
+
+								public void send_click(){
+												stdout.printf("Mousebutton: %i\n", this.button);
+												//this.execProgram( cmd );
+												Posix.sleep(1);
+
+												//hide overlay
+												if( hide_after_action ){
+																omanager.hideActiveOverlay();
+												}
+								}
+
 				}
 
 }//End Namespace

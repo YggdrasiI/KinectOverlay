@@ -2,7 +2,7 @@ VERSION = 0.1
 VALAC      = valac
 BINDIR = bin
 OUTPUTFILE = $(BINDIR)/overlay
-FILES = main.vala OverlayWindow.vala imagebuttons.vala keybinding-manager.vala overlay-manager.vala LoServer.vala LoClient.vala keysend.c
+FILES = main.vala OverlayWindow.vala imagebuttons.vala keybinding-manager.vala overlay-manager.vala LoServer.vala LoClient.vala keysend.c MouseActions.c
 PKGFLAGS = --pkg liblo --pkg posix --pkg x11 --pkg gdk-x11-2.0 --pkg gee-1.0 --pkg keysym --pkg gtk+-2.0 --pkg gmodule-2.0
 
 
