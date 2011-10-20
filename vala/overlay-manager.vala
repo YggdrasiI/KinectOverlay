@@ -144,6 +144,7 @@ public OverlayWindow? getOverlay(string name){
 
 /* hide active overlay */
 public void hideActiveOverlay(){
+	if( this.active == null ) return;
 	this.active.hide();
 	this.loclient.broadcastChangeOverlay( );
 }

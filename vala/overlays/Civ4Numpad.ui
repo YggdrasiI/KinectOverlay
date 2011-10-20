@@ -4,8 +4,8 @@
   <!-- interface-naming-policy project-wide -->
   <object class="OverlayOverlayWindow" id="overlay">
     <property name="visible">True</property>
-    <property name="title" translatable="yes">Sample Application</property>
-<!--    <property name="window_position">center-always</property>-->
+    <property name="title" translatable="yes">Civ4 Numpad</property>
+		<!--    <property name="window_position">center-always</property>-->
     <property name="default_width">400</property>
     <property name="default_height">400</property>
     <property name="urgency_hint">True</property>
@@ -13,6 +13,8 @@
     <property name="opacity">0.5</property>
     <property name="maximizeOverlay">false</property>
     <property name="react_on_mouse">false</property>
+    <property name="trackpad_selection">true</property>
+    <property name="circle_detection">false</property>
     <property name="prefered_position">3</property>
     <child>
       <object class="GtkTable" id="table1">
@@ -156,7 +158,8 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox12">
-						<property name="box_name">Civ4_ZoomIn</property>
+						<!--<property name="box_name">Civ4_ZoomIn</property>-->
+						<property name="box_name">Scroll_Up</property>
           </object>
           <packing>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -169,7 +172,8 @@
         </child>
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox13">
-						<property name="box_name">Civ4_ZoomOut</property>
+						<!--<property name="box_name">Civ4_ZoomOut</property>-->
+						<property name="box_name">Scroll_Down</property>
           </object>
           <packing>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>

@@ -7,8 +7,10 @@ namespace Overlay {
 public class OverlayWindow : Gtk.Window, Initable {
 
 public bool is_show;
-public bool react_on_mouse {get; set;}
 public int prefered_position {get; set;}
+public bool react_on_mouse {get; set;}
+public bool trackpad_selection {get; set;}
+public bool circle_detection {get; set;}
 private int width;
 private int height;
 public bool maximizeOverlay {get; set;}
@@ -39,8 +41,23 @@ debug(@"Win name: $(this.win_name)");
 	//this.set_gravity( Gdk.Gravity.NORTH_WEST );
 
 	this.set_keep_above(true);
-	if( this.maximizeOverlay )	this.maximize();
+	if( this.maximizeOverlay ){
+		/*
+			Maximize bug?! Can't maximize windows, which are without decoration
+		if(!this.get_decorated()){
+			this.set_decorated(true);
+			this.present();
+			this.maximize();
+			this.present();
+			this.set_decorated(false);
+		}else{
+			this.maximize();
+		}
+		*/
+		//	this.maximize();
+	}
 	this.set_accept_focus(false);
+	this.skip_taskbar_hint = true;
 
 	Gdk.Color bg_color;
 	Gdk.Color.parse("#000000", out bg_color);
@@ -83,6 +100,11 @@ public void scaleGridImages( Gtk.Table table){
 
 	this.width =  int.min(this.width, this.screen.width());
 	this.height =  int.min(this.height, this.screen.height());
+
+	if(! this.maximizeOverlay ){
+		this.width = int.min( this.width, this.default_width );
+		this.height = int.min( this.height, this.default_height );
+	}
 
 	uint rows = table.n_rows;
 	uint columns = table.n_columns;
@@ -226,13 +248,15 @@ private void cb_scale_image (Widget widget) {
 public override void show(){
 	this.is_show = true;
 	
-	if( this.maximizeOverlay )	this.maximize();
-	else{
+	base.show();
+
+	if( this.maximizeOverlay ){
+		this.maximize();
+	}else{
 		corner_move(this.prefered_position);//numpad-coordinates
 	}
-
-	base.show();
 	present();
+
 //	omanager.loclient.broadcastChangeOverlay( ); //not here... (too many calls)
 }
 
@@ -346,6 +370,7 @@ private void corner_move(int pos){
           y = (screen_height-h)/2;
           break;
         case 5:
+          x = (screen_width-w)/2;
           y = (screen_height-h)/2;
           break;
         case 6:

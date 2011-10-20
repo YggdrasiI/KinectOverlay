@@ -3,8 +3,8 @@
   <requires lib="gtk+" version="2.16"/>
   <!-- interface-naming-policy project-wide -->
   <object class="OverlayOverlayWindow" id="overlay">
-    <property name="title" translatable="yes">Sample Application</property>
-    <property name="window_position">center-always</property>
+    <property name="title" translatable="yes">Yes or No</property>
+    <!--<property name="window_position">center-always</property>-->
     <property name="default_width">1024</property>
     <property name="default_height">768</property>
     <property name="urgency_hint">True</property>
@@ -12,6 +12,8 @@
     <property name="opacity">0.5</property>
     <property name="maximizeOverlay">false</property>
     <property name="react_on_mouse">true</property>
+    <property name="trackpad_selection">false</property>
+    <property name="circle_detection">false</property>
     <property name="prefered_position">5</property>
     <child>
       <object class="GtkTable" id="buttontable">

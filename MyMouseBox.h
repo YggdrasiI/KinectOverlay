@@ -126,7 +126,7 @@ class MyMouseBox : public XnVPointControl
 
 
 		// Change flow state between steady and swipe
-		void SetNumpadActive() {
+		void SetTrackPadActive() {
 			overlay_active = TRUE;
 			numpad_active = TRUE;
 			m_pInnerFlowRouter->SetActive(m_pTrackPad);
@@ -203,7 +203,7 @@ class MyMouseBox : public XnVPointControl
 				//Set input center
 				//((MySlider2D*)UserCxt)->Reposition(ptFocus);
 				//((MySlider2D*)cxt)->Activate(true);
-				//SetNumpadActive();
+				//SetTrackPadActive();
 
 				printf("Send Push Lo Event (in MyMousebox)\n");
 				/* swaped push action of hands. Old was:
@@ -238,7 +238,7 @@ class MyMouseBox : public XnVPointControl
 			if( !overlay_active && !numpad_active ){ // if no other layout shown, (part after && currently redundant)
 				char uiname[] = "Civ4Numpad.ui";
 				civ4_change_overlay(uiname,1);
-				box->SetNumpadActive();
+				box->SetTrackPadActive();
 			}
 		}
 

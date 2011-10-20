@@ -1380,7 +1380,8 @@
           <object class="OverlayShortcutEventBox" id="eventbox99">
             <property name="visible">True</property>
             <property name="box_name">Browser_Home</property>
-            <property name="shortcut">&lt;Alt&gt;+&lt;Home&gt;</property>
+            <!--<property name="shortcut">&lt;Alt&gt;+&lt;Home&gt;</property>--><!-- Alt currently not work -->
+            <property name="shortcut">gh</property><!-- shortcut for vimperator -->
             <property name="hide_after_action">true</property>
             <child>
               <object class="GtkImage" id="image99">
@@ -1432,7 +1433,6 @@
             </child>
           </object>
         </child>
-
 				<child>
           <object class="OverlayMouseEventBox" id="eventbox103">
             <property name="visible">True</property>
@@ -1443,6 +1443,34 @@
               <object class="GtkImage" id="image103">
                 <property name="visible">True</property>
                 <property name="pixbuf">../icons/MouseRight.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayMouseEventBox" id="eventbox104">
+            <property name="visible">True</property>
+            <property name="box_name">Scroll_Up</property>
+            <property name="button">4</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image104">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowUp.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayMouseEventBox" id="eventbox105">
+            <property name="visible">True</property>
+            <property name="box_name">Scroll_Down</property>
+            <property name="button">5</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image105">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/ArrowDown.png</property>
               </object>
             </child>
           </object>

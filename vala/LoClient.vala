@@ -31,6 +31,18 @@ public	void broadcastChangeOverlay(){
 		message.add_int32((int) winMain.n_rows);
 		message.add_int32((int) winMain.n_columns);
 
+/*
+1 - Mouse movement active
+2 - Trackpad selection active
+4 - Circle detection active
+*/
+		int optionFlags = 0;
+		optionFlags += (winMain.react_on_mouse?1:0);
+		optionFlags += (winMain.trackpad_selection?2:0);
+		optionFlags += (winMain.circle_detection?4:0);
+
+		message.add_int32((int) optionFlags);
+
 		message.send(this.lo_address, "/overlay/manager/changeOverlay");
 	}
 

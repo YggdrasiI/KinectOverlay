@@ -5,14 +5,16 @@
   <object class="OverlayOverlayWindow" id="overlay">
     <property name="visible">True</property>
     <property name="title" translatable="yes">Sample Application</property>
-<!--    <property name="window_position">center-always</property>-->
+		<!--    <property name="window_position">center-always</property>-->
     <property name="default_width">1400</property>
     <property name="default_height">150</property>
     <property name="urgency_hint">True</property>
     <property name="decorated">False</property>
     <property name="opacity">0.5</property>
     <property name="maximizeOverlay">false</property>
-    <property name="react_on_mouse">true</property>
+    <property name="react_on_mouse">false</property>
+    <property name="trackpad_selection">true</property>
+    <property name="circle_detection">false</property>
     <property name="prefered_position">8</property>
     <child>
 			<object class="GtkTable" id="table1">
