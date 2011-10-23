@@ -23,7 +23,7 @@
             <child>
               <object class="GtkImage" id="image1">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowLeft.png</property>
               </object>
             </child>
           </object>
@@ -414,7 +414,7 @@
             <child>
               <object class="GtkImage" id="image29">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUp.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowUp.png</property>
               </object>
             </child>
           </object>
@@ -428,7 +428,7 @@
             <child>
               <object class="GtkImage" id="image30">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDown.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowDown.png</property>
               </object>
             </child>
           </object>
@@ -484,7 +484,7 @@
             <child>
               <object class="GtkImage" id="image34">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowLeft.png</property>
               </object>
             </child>
           </object>
@@ -512,7 +512,7 @@
             <child>
               <object class="GtkImage" id="image36">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUpLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowUpLeft.png</property>
               </object>
             </child>
           </object>
@@ -526,7 +526,7 @@
             <child>
               <object class="GtkImage" id="image37">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUp.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowUp.png</property>
               </object>
             </child>
           </object>
@@ -540,7 +540,7 @@
             <child>
               <object class="GtkImage" id="image38">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUpRight.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowUpRight.png</property>
               </object>
             </child>
           </object>
@@ -554,7 +554,7 @@
             <child>
               <object class="GtkImage" id="image39">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowLeft.png</property>
               </object>
             </child>
           </object>
@@ -568,7 +568,7 @@
             <child>
               <object class="GtkImage" id="image40">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowRight.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowRight.png</property>
               </object>
             </child>
           </object>
@@ -582,7 +582,7 @@
             <child>
               <object class="GtkImage" id="image41">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDownLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowDownLeft.png</property>
               </object>
             </child>
           </object>
@@ -596,7 +596,7 @@
             <child>
               <object class="GtkImage" id="image42">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDown.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowDown.png</property>
               </object>
             </child>
           </object>
@@ -610,7 +610,7 @@
             <child>
               <object class="GtkImage" id="image43">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDownRight.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowDownRight.png</property>
               </object>
             </child>
           </object>
@@ -1350,14 +1350,14 @@
 				<child>
           <object class="OverlayShortcutEventBox" id="eventbox97">
             <property name="visible">True</property>
-            <property name="box_name">Browser_Up</property>
+            <property name="box_name">Browser_PageUp</property>
             <!--<property name="shortcut">&lt;Shift&gt;+&lt;Space&gt;</property>-->
             <property name="shortcut">b</property>
             <property name="hide_after_action">false</property>
             <child>
               <object class="GtkImage" id="image97">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUp.png</property>
+                <property name="pixbuf">../icons/Browser/PageUp.png</property>
               </object>
             </child>
           </object>
@@ -1365,13 +1365,13 @@
 				<child>
           <object class="OverlayShortcutEventBox" id="eventbox98">
             <property name="visible">True</property>
-            <property name="box_name">Browser_Down</property>
+            <property name="box_name">Browser_PageDown</property>
             <property name="shortcut">&lt;Space&gt;</property>
             <property name="hide_after_action">false</property>
             <child>
               <object class="GtkImage" id="image98">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDown.png</property>
+                <property name="pixbuf">../icons/Browser/PageDown.png</property>
               </object>
             </child>
           </object>
@@ -1381,7 +1381,7 @@
             <property name="visible">True</property>
             <property name="box_name">Browser_Home</property>
             <!--<property name="shortcut">&lt;Alt&gt;+&lt;Home&gt;</property>--><!-- Alt currently not work -->
-            <property name="shortcut">gh</property><!-- shortcut for vimperator -->
+            <property name="shortcut">g,h</property><!-- shortcut for vimperator -->
             <property name="hide_after_action">true</property>
             <child>
               <object class="GtkImage" id="image99">
@@ -1456,7 +1456,7 @@
             <child>
               <object class="GtkImage" id="image104">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowUp.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowUp.png</property>
               </object>
             </child>
           </object>
@@ -1470,7 +1470,108 @@
             <child>
               <object class="GtkImage" id="image105">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/ArrowDown.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowDown.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayRunCommandEventBox" id="eventbox106">
+            <property name="visible">True</property>
+            <property name="box_name">Keyboard_Start</property>
+						<!-- This virtual keyboard is an other programm from me at github.
+						See https://github.com/YggdrasiI/NeoLayoutViewer
+						-->
+            <property name="command">~/scripts/startNeoLayoutViewer</property>
+            <property name="hide_after_action">true</property>
+            <child>
+              <object class="GtkImage" id="image106">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Neo-Icon.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox107">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_PageHalveDown</property>
+            <property name="shortcut">&lt;Ctrl&gt;+d</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image107">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Browser/PageHalveDown.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox108">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_PageHalveUp</property>
+            <property name="shortcut">&lt;Ctrl&gt;+u</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image108">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Browser/PageHalveUp.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox109">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Top</property>
+            <property name="shortcut">g,g</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image109">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Browser/PageTop.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox110">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_Bottom</property>
+            <property name="shortcut">&lt;Shift&gt;+G</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image110">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Browser/PageBottom.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox111">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_HistoryBack</property>
+            <property name="shortcut">l</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image111">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Arrows/ArrowLeft.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+				<child>
+          <object class="OverlayShortcutEventBox" id="eventbox112">
+            <property name="visible">True</property>
+            <property name="box_name">Browser_HistoryForward</property>
+            <property name="shortcut">c</property>
+            <property name="hide_after_action">false</property>
+            <child>
+              <object class="GtkImage" id="image112">
+                <property name="visible">True</property>
+                <property name="pixbuf">../icons/Arrows/ArrowRight.png</property>
               </object>
             </child>
           </object>

@@ -19,37 +19,37 @@
       <object class="GtkTable" id="buttontable">
         <property name="visible">True</property>
         <property name="n_rows">4</property>
-        <property name="n_columns">6</property>
+        <property name="n_columns">5</property>
         <property name="homogeneous">true</property>
 				<child>
           <object class="OverlayPlaceholderBox" id="placeholderbox1">
-						<property name="box_name">Browser_Up</property>
+						<property name="box_name">Browser_PageHalveUp</property>
 					</object>
 					<packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
 					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
 						<property name="left_attach">1</property>
-            <property name="right_attach">6</property>
+            <property name="right_attach">4</property>
             <property name="top_attach">0</property>
             <property name="bottom_attach">2</property>
          </packing>
         </child>
 				<child>
           <object class="OverlayPlaceholderBox" id="placeholderbox2">
-						<property name="box_name">Browser_Down</property>
+						<property name="box_name">Browser_PageHalveDown</property>
 					</object>
 					<packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
 					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
 						<property name="left_attach">1</property>
-            <property name="right_attach">6</property>
+            <property name="right_attach">4</property>
             <property name="top_attach">2</property>
             <property name="bottom_attach">4</property>
           </packing>
         </child>
 				<child>
           <object class="OverlayPlaceholderBox" id="placeholderbox3">
-						<property name="box_name">Browser_Start</property>
+						<property name="box_name">Browser_Home</property>
 					</object>
 					<packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -62,7 +62,7 @@
         </child>
 				<child>
           <object class="OverlayPlaceholderBox" id="placeholderbox4">
-						<property name="box_name">Browser_Home</property>
+						<property name="box_name">Browser_HistoryBack</property>
 					</object>
 					<packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -75,7 +75,7 @@
         </child>
 				<child>
           <object class="OverlayPlaceholderBox" id="placeholderbox5">
-						<property name="box_name">Click_Middle</property>
+						<property name="box_name">Browser_HistoryForward</property>
 					</object>
 					<packing>
 					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
@@ -83,6 +83,71 @@
 						<property name="left_attach">0</property>
             <property name="right_attach">1</property>
             <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox6">
+						<property name="box_name">Keyboard_Start</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+						<property name="left_attach">0</property>
+            <property name="right_attach">1</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox7">
+						<property name="box_name">Browser_Top</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+						<property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">0</property>
+            <property name="bottom_attach">1</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox8">
+						<property name="box_name">Browser_PageUp</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+						<property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox9">
+						<property name="box_name">Browser_PageDown</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+						<property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+          </packing>
+        </child>
+				<child>
+          <object class="OverlayPlaceholderBox" id="placeholderbox10">
+						<property name="box_name">Browser_Bottom</property>
+					</object>
+					<packing>
+					  <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+					  <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+						<property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">3</property>
             <property name="bottom_attach">4</property>
           </packing>
         </child>

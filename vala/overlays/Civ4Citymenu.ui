@@ -12,8 +12,8 @@
     <property name="decorated">False</property>
     <property name="opacity">0.5</property>
     <property name="maximizeOverlay">false</property>
-    <property name="react_on_mouse">false</property>
-    <property name="trackpad_selection">true</property>
+    <property name="react_on_mouse">true</property>
+    <property name="trackpad_selection">false</property>
     <property name="circle_detection">false</property>
     <property name="prefered_position">8</property>
     <child>

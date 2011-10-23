@@ -240,12 +240,12 @@ void XN_CALLBACK_TYPE PrimaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void* c
 
 			//Select overlayname. 
 			if( //strcmp( g_active_overlay, "") == 0 ||
-					strcmp( g_active_overlay, "Civ4Numpad.ui") == 0 //||
+					strcmp( g_active_overlay, "Civ4Numpad.ui") == 0 ||
 					//strcmp( g_active_overlay, "Civ4Citymenu.ui") == 0 ||
 					//strncmp( g_active_overlay, "Civ4Menu", 8 ) == 0 )
-				//strncmp( g_active_overlay, "Civ4Menu2", 9 ) == 0
+				strncmp( g_active_overlay, "Civ4Menu2", 9 ) == 0
 					){
-						char uiname[] = "Civ4Unitgrid.ui";
+						char uiname[] = "defaultOverlay";
 						civ4_change_overlay(uiname,1);
 					}else{
 						char uiname[] = "";//select last active
@@ -337,7 +337,7 @@ void XN_CALLBACK_TYPE SecondaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void*
 	// Leave the box
 	//box->Leave();
 	printf("Secondary Push, %i\n", g_nSecondaryPushTimestamp);
-	if( overlay_active == TRUE && circle_active == FALSE ){
+	if( overlay_active == TRUE && circle_active == FALSE && mouse_move_active == FALSE ){
 		printf("Secondary Push, push cell\n");
 		MySlider2D* mySlider = g_pMySlider; //(MySlider2D*)cxt;
 		push_cell( (int) ( mySlider->GetItemYCount()-1-mySlider->m_YIndex), (int) mySlider->m_XIndex );
