@@ -28,6 +28,9 @@
 #ifndef MY_MOUSE_BOX_H
 #define MY_MOUSE_BOX_H
 
+#include <XnEvent.h>
+XN_DECLARE_EVENT_0ARG(XnVEvent, XnVEventIfc);
+
 // for sending ocs events
 #include "OverlaySend.h"
 #include "XnVSecondaryFilter.h"
@@ -46,7 +49,7 @@ class MyBox2 : public XnVPointControl
 		typedef void (XN_CALLBACK_TYPE *LeaveCB)(void* pUserCxt);
 		typedef void (XN_CALLBACK_TYPE *PushCB)(XnFloat fVelocity, XnFloat fAngle, void* UserCxt);
 		typedef void (XN_CALLBACK_TYPE *StabilizedCB)(XnFloat fVelocity, void* UserCxt);
-		//typedef void (XN_CALLBACK_TYPE *SteadyCB)(XnUInt32 nId, XnFloat fStdDev, void* pUserCxt);
+		typedef void (XN_CALLBACK_TYPE *SteadyCB)(XnUInt32 nId, XnFloat fStdDev, void* pUserCxt);
 
 		// Create the MyBox2
 		MyBox2(int * puinp_fd, PushCB secondaryPushCB, StabilizedCB secondaryStableCB, XnVSecondaryFilter* psf) : XnVPointControl("MyBox2"), m_puinp_fd(puinp_fd)
@@ -250,7 +253,8 @@ static void XN_CALLBACK_TYPE Swipe_SwipeRight(XnFloat fVelocity, XnFloat fAngle,
 }
 
 // Steady detector
-static void XN_CALLBACK_TYPE Steady_OnSteady(XnFloat fVelocity, void* cxt)
+//static void XN_CALLBACK_TYPE Steady_OnSteady(XnFloat fVelocity, void* cxt)
+static void XN_CALLBACK_TYPE Steady_OnSteady(XnUInt32 nId, XnFloat fVelocity, void* cxt)
 {
 	printf("Steady\n");
 	MyBox2* box = (MyBox2*)(cxt);
@@ -270,17 +274,18 @@ void Leave()
 
 //+++++
 
-//private:
-XnVPushDetector* m_pPushDetector;
-XnVFlowRouter* m_pInnerFlowRouter;
-XnVSwipeDetector* m_pSwipeDetector;
-XnVSteadyDetector* m_pSteadyDetector;
-XnVBroadcaster m_Broadcaster;
-XnVEvent m_LeaveCBs;
-XnVSecondaryFilter* m_psf;
+private:
+	XnVPushDetector* m_pPushDetector;
+	XnVFlowRouter* m_pInnerFlowRouter;
+	XnVSwipeDetector* m_pSwipeDetector;
+	XnVSteadyDetector* m_pSteadyDetector;
+	XnVBroadcaster m_Broadcaster;
+//	XnVEvent m_LeaveCBs;
+	XnVSecondaryFilter* m_psf;
 
-int* m_puinp_fd;
-struct input_event m_event; // Input device structure 
+	int* m_puinp_fd;
+	struct input_event m_event; // Input device structure 
+	XnVEvent m_LeaveCBs;
 };
 
 #endif
