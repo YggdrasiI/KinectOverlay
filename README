@@ -35,7 +35,7 @@ Run Notes:
  "cd Bin/x86-Release/ ; ./KinectOverlay" start the hand detection and mouse emulation.
   Push and move first hand till mouse cursor is moving. Swipe second hand close to the first hand. 
 	There is no graphical feedback both hand get detected. Just click around.
-	Push the second hand on lower or middle position to simulate left mouse clicks.
+	Push the second hand on low or middle position to simulate left mouse clicks.
 	Push the second hand high to press the right button down. Release the button with a second push (Right clicks toggle the 'GoTo-command' in Civ4.)
 	All funtionalities will connected with the first hand, if second hand not found (one hand mode)!
 
