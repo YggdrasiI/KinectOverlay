@@ -484,7 +484,7 @@
             <child>
               <object class="GtkImage" id="image34">
                 <property name="visible">True</property>
-                <property name="pixbuf">../icons/Arrows/ArrowLeft.png</property>
+                <property name="pixbuf">../icons/Arrows/ArrowLeft_nonsquare.png</property>
               </object>
             </child>
           </object>

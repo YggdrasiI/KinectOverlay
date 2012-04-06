@@ -229,7 +229,7 @@ void XN_CALLBACK_TYPE PrimaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void* c
 	if( overlay_active == FALSE ){
 		//check, if push with both hands
 		if(false &&  g_nPrimaryPushTimestamp - g_nSecondaryPushTimestamp < DOUBLE_PUSH_TIME ){
-			printf("Double Push!! Diff was %i\n", g_nPrimaryPushTimestamp - g_nSecondaryPushTimestamp );
+			printf("Double Push!! Diff was %i\n", (int) (g_nPrimaryPushTimestamp - g_nSecondaryPushTimestamp) );
 			if( g_pPointDetector->getMode() != 3){
 				g_pPointDetector->setMode(3);
 			}else{
@@ -336,7 +336,7 @@ void XN_CALLBACK_TYPE SecondaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void*
 	MyBox2* box = (MyBox2*)(cxt);
 	// Leave the box
 	//box->Leave();
-	printf("Secondary Push, %i\n", g_nSecondaryPushTimestamp);
+	printf("Secondary Push, %i\n", (int) g_nSecondaryPushTimestamp);
 	if( overlay_active == TRUE && circle_active == FALSE && mouse_move_active == FALSE ){
 		printf("Secondary Push, push cell\n");
 		MySlider2D* mySlider = g_pMySlider; //(MySlider2D*)cxt;
@@ -345,7 +345,7 @@ void XN_CALLBACK_TYPE SecondaryOnPushCB(XnFloat fVelocity, XnFloat fAngle, void*
 
 		//check, if push with both hands
 		if(false && g_nSecondaryPushTimestamp-g_nPrimaryPushTimestamp<DOUBLE_PUSH_TIME ){
-			printf("Double Push!! Diff was %i\n", g_nSecondaryPushTimestamp-g_nPrimaryPushTimestamp);
+			printf("Double Push!! Diff was %i\n", (int) (g_nSecondaryPushTimestamp-g_nPrimaryPushTimestamp) );
 			if( g_pPointDetector->getMode() != 3){
 				g_pPointDetector->setMode(3);
 			}else{
@@ -798,7 +798,8 @@ int main(int argc, char** argv)
 	delete g_pMySlider;
 	delete g_pCircle;
 
-	context.Shutdown();
+	//context.Shutdown();
+	context.Release();
 	ioctl(uinp_fd, UI_DEV_DESTROY); 
 	close(uinp_fd); 
 

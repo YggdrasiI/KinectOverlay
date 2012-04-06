@@ -4,7 +4,7 @@
   <!-- interface-naming-policy project-wide -->
   <object class="OverlayOverlayWindow" id="overlay">
     <property name="visible">True</property>
-    <property name="title" translatable="yes">Sample Application</property>
+    <property name="title" translatable="yes">Civ4 Worker Actions</property>
     <!--<property name="window_position">center-always</property>-->
     <property name="default_width">1024</property>
     <property name="default_height">768</property>
@@ -12,8 +12,8 @@
     <property name="decorated">False</property>
     <property name="opacity">0.5</property>
     <property name="maximizeOverlay">true</property>
-    <property name="react_on_mouse">true</property>
-    <property name="trackpad_selection">false</property>
+    <property name="react_on_mouse">false</property>
+    <property name="trackpad_selection">true</property>
     <property name="circle_detection">false</property>
     <property name="prefered_position">5</property>
     <child>
@@ -25,7 +25,6 @@
         <child>
           <object class="OverlayPlaceholderBox" id="placeholderbox1">
 						<property name="box_name">Civ4Unitgrid</property>
-<!--						<property name="box_name">HideWindow</property>-->
 					</object>
         </child>
         <child>

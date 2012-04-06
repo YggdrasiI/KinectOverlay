@@ -22,11 +22,11 @@ public int column_active = -1;
 //private double button_scale = 0.7;
 public Gee.HashMap<string, OverlayEventBox> eventBoxMap;
 //private Gtk.TableChild tableChild = null;
-
+private bool windowmanager_not_maximize = false;
 
 public OverlayWindow(){
 //this.maximize();
-	this.win_name = "noname";
+	this.win_name = "Overlay";
 	this.react_on_mouse = true;
 init();
 }
@@ -104,6 +104,10 @@ public void scaleGridImages( Gtk.Table table){
 	if(! this.maximizeOverlay ){
 		this.width = int.min( this.width, this.default_width );
 		this.height = int.min( this.height, this.default_height );
+	}else if(windowmanager_not_maximize){
+		//i.e. xmonad
+		this.width =  this.screen.width();
+		this.height = this.screen.height();
 	}
 
 	uint rows = table.n_rows;
@@ -252,6 +256,11 @@ public override void show(){
 
 	if( this.maximizeOverlay ){
 		this.maximize();
+
+		//check if  window manager maximized window. Some manager, i.e. xmonad, ignore window maximizing.
+		if( this.width <  this.screen.width()-40/*border */ ){
+			this.windowmanager_not_maximize = true;
+		}
 	}else{
 		corner_move(this.prefered_position);//numpad-coordinates
 	}
