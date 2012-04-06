@@ -37,9 +37,7 @@
 
 // OpenNI headers
 #include <XnOpenNI.h>
-#include <XnCppWrapper.h>
 // NITE headers
-#include <XnVHandPointContext.h>
 #include <XnVSessionManager.h>
 #include "XnVMultiProcessFlowClient.h"
 #include <XnVWaveDetector.h>
@@ -72,7 +70,7 @@
 
 
 // xml to initialize OpenNI
-#define SAMPLE_XML_FILE "../../../Data/Sample-Tracking.xml"
+#define SAMPLE_XML_FILE "../../../Samples/KinectOverlay/Tracking.xml"
 
 static int display_width;
 static int display_height;
@@ -674,7 +672,6 @@ int main(int argc, char** argv)
 		// Local mode
 		// Create context
 		XnStatus rc = context.InitFromXmlFile(SAMPLE_XML_FILE);
-
 		if (rc != XN_STATUS_OK)
 		{
 			printf("Couldn't initialize: %s\n", xnGetStatusString(rc));

@@ -21,7 +21,8 @@ Install Notes:
  Switch to the subfolder vala and call make again for the graphical part. 
 
 - Enable multi hand tracking (See http://www.keyboardmods.com/2010/12/howto-kinect-openninite-skeleton.html)
-Edit /usr/etc/primesense/XnVHandGenerator/Nite.ini by uncommenting the two config parameters it contains.
+Edit /usr/etc/primesense/XnVHandGenerator/Nite.ini and /usr/etc/primesense/Hands_1_5_2/Nite.ini
+by uncommenting the two config parameters it contains.
 
 [HandTrackerManager]
 AllowMultipleHands=1
